@@ -1,5 +1,5 @@
 # Сортировка слиянием
-# На вход подается число n и последовательность из n натуральных чисел,
+# На вход подается число n и последовательность из n элементов,
 # на выход выводится отсортированная последовательность
 
 
@@ -45,7 +45,7 @@ def Sort(list):
     l1= n1 - len(list)
     list = [0 for i in range(n1-len(list))] + list
     Q = []
-    return MergeAll(Split(list, 0, len(list) - 1, Q))[l1:] #l1
+    return MergeAll(Split(list, 0, len(list) - 1, Q))[l1:]
 
 def main():
     n = int(input())
